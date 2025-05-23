@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #blabla{
+        text-align: center;
+    }
+    .blabla{
+        background-color: rgba(135, 222, 181, 0.548);
+    }
+</style>
+<body>
+    <div id="blabla", class="blabla">
+    <h2 align="center">
+    Login Form
+    </h2>
+    <br><br>
+    <label for="">UserName (Email Id)</label><br>
+    <input type="text" id="username">
+    <br><br>
+    <label for="">Password</label><br>
+    <input type="password" id="password1">
+    <br><br><br>
+    <button onclick="
+    a=document.getElementById('username').value;
+    b=parseInt(document.getElementById('password1').value);
+    console.log('User Name: ',a);
+    console.log('Password: ',b);
+    ">CLICK ME</button>
+    <br><br>
+    <a href="/Signup.html">Sign in</a>
+    </div>
+</body>
+</html>

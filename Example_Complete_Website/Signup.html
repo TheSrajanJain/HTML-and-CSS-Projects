@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #blabla{
+        text-align: center;
+    }
+    .blabla{
+        background-color:rgba(229, 255, 0, 0.432);
+    }
+</style>
+<body>
+    <div id="blabla", class="blabla">
+    <h1>Registration </h1>
+    <label for="">Name</label><br>
+    <input type="text" id="name">
+    <br><br>
+    <label for="">Age</label><br>
+    <input type="number" id="age">
+    <br><br>
+    <label for="">Contact no.</label><br>
+    <input type="number" id="contact">
+    <br><br>
+    <label for="">Date Of Birth</label><br>
+    <input type="date" id="dob">
+    <br><br>
+    <label for="">Email Id</label><br>
+    <input type="email" id="email">
+    <br><br>
+    <label for="">Password</label><br>
+    <input type="password" id="password">
+    <br><br>
+    <label for="">Confirm Password</label><br>
+    <input type="password" id="password1">
+    <br><br><br>
+    <button onclick="
+    a=document.getElementById('name').value;
+    b=parseInt(document.getElementById('age').value);
+    c=parseInt(document.getElementById('contact').value);
+    d=parseInt(document.getElementById('dob').value);
+    e=document.getElementById('email').value;
+    console.log('Name: ',a);
+    console.log('Age: ',b);
+    console.log('Contact No.: ',c);
+    console.log('Date Of Birth: ',d);
+    console.log('Email Id: ',e);
+    ">CLICK ME</button>
+    <br><br>
+    <a href="/Login.html">Back To The Login Page</a>
+    </div>
+</body>
+</html>
