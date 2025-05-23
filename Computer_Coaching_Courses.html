@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Computer Courses List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .accordion {
+      background-color: #fff;
+      color: #333;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: background-color 0.3s ease;
+      font-size: 18px;
+      margin-top: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+
+    .accordion:hover {
+      background-color: #e2e2e2;
+    }
+
+    .active, .accordion:active {
+      background-color: #dcdcdc;
+    }
+
+    .panel {
+      padding: 0 20px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    ul {
+      margin-top: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Computer Courses Offered</h1>
+
+  <!-- Example of one course -->
+  <button class="accordion">DCA (Diploma in Computer Applications) – 8/10 months</button>
+  <div class="panel">
+    <ul>
+      <li>Basic (Windows-10, Notepad, Wordpad, Paint, Shortcuts)</li>
+      <li>Fundamental, Internet</li>
+      <li>MS Word, Advance Excel, PowerPoint</li>
+      <li>Pagemaker, Photoshop, Corel Draw</li>
+      <li>Tally (6.3, 7.2, GST), Tally Prime</li>
+    </ul>
+  </div>
+
+  <button class="accordion">CTT (Computer Teacher Training) – 12 months</button>
+  <div class="panel">
+    <ul>
+      <li>All DCA Topics</li>
+      <li>C & C++</li>
+    </ul>
+  </div>
+
+  <button class="accordion">COA (Certificate in Office Automation) – 3 months</button>
+  <div class="panel">
+    <ul>
+      <li>Computer fundamentals</li>
+      <li>Windows 10 basics (Notepad, Wordpad, Paint, Shortcuts)</li>
+      <li>MS Word, Excel, PowerPoint</li>
+    </ul>
+  </div>
+
+  <button class="accordion">CCC (NIELIT) – 3 months</button>
+  <div class="panel">
+    <ul>
+      <li>Basic, Windows 10, Notepad, Wordpad, Paint, Shortcuts</li>
+      <li>Fundamental, Internet</li>
+      <li>MS Word, Advance Excel, PowerPoint</li>
+    </ul>
+  </div>
+
+  <button class="accordion">'O' Level (NIELIT) – 12 months</button>
+  <div class="panel">
+    <ul>
+      <li><strong>First Semester:</strong> IT Tools and Network Basics [M1-R5], Web Designing & Publishing [M2-R5]</li>
+      <li><strong>Second Semester:</strong> Python Programming [M3-R5], IoT Applications [M4-R5], Project [PJ1-R5]</li>
+    </ul>
+  </div>
+
+  <button class="accordion">Full-Stack Web Development – 7/8 months</button>
+  <div class="panel">
+    <ul>
+      <li>Front-end: HTML, CSS, JavaScript</li>
+      <li>Back-end: Java + Frameworks + API</li>
+      <li>Database: SQL</li>
+    </ul>
+  </div>
+
+  <!-- Repeat this structure for other courses -->
+
+  <button class="accordion">UPSDM – FREE</button>
+  <div class="panel">
+    <ul>
+      <li>Courses in IT-ITES, Handicraft, Apparel, Healthcare, etc.</li>
+      <li>More info: <a href="http://www.upsdm.gov.in" target="_blank">www.upsdm.gov.in</a></li>
+    </ul>
+  </div>
+
+  <button class="accordion">NSDC – FREE</button>
+  <div class="panel">
+    <ul>
+      <li>Skill development and international placements</li>
+      <li>More info: <a href="http://www.skillindiadigital.gov.in" target="_blank">www.skillindiadigital.gov.in</a></li>
+    </ul>
+  </div>
+
+  <button class="accordion">NULM – FREE</button>
+  <div class="panel">
+    <ul>
+      <li>Self-employment and skill training for urban poor</li>
+      <li>More info: <a href="http://www.nulm.gov.in" target="_blank">www.nulm.gov.in</a></li>
+    </ul>
+  </div>
+
+  <!-- Add this section just before the <script> tag at the end of the existing HTML -->
+
+<button class="accordion">RSLDC – FREE</button>
+<div class="panel">
+  <ul>
+    <li>Saksham scheme is run by the state government of Rajasthan.</li>
+    <li>Free skill development courses available across Rajasthan.</li>
+    <li>Visit our authorized training partner: Biit Group of Education</li>
+    <li>Call us: 9058007117</li>
+    <li>More info: <a href="http://www.nulm.gov.in" target="_blank">www.nulm.gov.in</a></li>
+  </ul>
+</div>
+
+  <script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
